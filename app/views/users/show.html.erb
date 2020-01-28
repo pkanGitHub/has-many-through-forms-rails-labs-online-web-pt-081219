@@ -1,1 +1,5 @@
-
+<ul>
+    <% @user.posts.each do |p| %>
+        <li><%= link_to p.title, post_path(p) %></li>
+    <% end %>
+</ul>
